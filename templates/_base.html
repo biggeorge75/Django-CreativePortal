@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CreativePortal:{% block title %}{% endblock title %}</title>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    {% include '_navbar.html' %}
+
+    <div class="content_container">
+        {% block body %}
+        {% endblock body %}
+    </div>
+</body>
+</html>
