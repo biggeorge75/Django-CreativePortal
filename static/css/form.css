@@ -43,6 +43,10 @@
     color: rgba(255, 255, 255, 0.31);
 }
 
+.help_text ul {
+    list-style-type: none;
+}
+
 .form_title{
     font-size: 20px;
 }
@@ -62,4 +66,13 @@
 
 .field_error ul{
     list-style-type: none;
+}
+
+.profile_image_container {
+    width: 300px;
+    height: 300px;
+    align-self: center;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
 }

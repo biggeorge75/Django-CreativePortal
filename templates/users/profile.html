@@ -1,0 +1,25 @@
+{% extends '_base.html' %}
+
+{% block title %} Profile: {{ user }} {% endblock title %}
+
+{% block body %}
+
+    <form method="post" class="input_form" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <div class="form_title"><span class="creative">{{ user }}</span> Profile</div>
+        <hr>
+
+        {% if user.profile.profile_pic %}
+            <div class="profile_image_container" style="background-image: url({{ user.profile.profile_pic.url }})"></div>
+{#            <img src="{{ user.profile.profile_pic.url }}" alt="" style="align-self: center">#}
+        {% endif %}
+
+
+        {{ form.as_p }}
+
+        <hr>
+        <button type="submit" class="button">Update Profile</button>
+    </form>
+
+{% endblock body %}
