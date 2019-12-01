@@ -1,13 +1,14 @@
-.input_form{
+.input_form {
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
     max-width: 600px;
     margin: auto;
     padding: 15px;
 }
-.button{
+
+.button {
     background-color: #13aff0;
     color: white;
     border: none;
@@ -18,11 +19,11 @@
     align-self: flex-end;
 }
 
-.button:hover{
+.button:hover {
     background-color: #74d5f0;
 }
 
-.text_input{
+.text_input {
     border: none;
     font-size: 16px;
     background-color: transparent;
@@ -33,13 +34,32 @@
     margin-bottom: 10px;
 }
 
-
 .text_input:focus{
-    background-color: rgba(0, 0, 0, 0.32);
+    background-color: rgba(0, 0, 0, 0.21);
 }
 
-.help_text{
+.help_text {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.31);
 }
 
+.form_title{
+    font-size: 20px;
+}
+
+.errors {
+    border: 1px solid #ff8f22;
+    color: #ff8f22;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.field_error{
+    color: #ff8f22;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.field_error ul{
+    list-style-type: none;
+}
